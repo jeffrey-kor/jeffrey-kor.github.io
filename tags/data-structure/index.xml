@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>data structure on Jeffrey 10 fingers</title>
+    <link>https://jeffrey-kor.github.io/tags/data-structure/</link>
+    <description>Recent content in data structure on Jeffrey 10 fingers</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 08 Apr 2021 18:48:24 +0900</lastBuildDate><atom:link href="https://jeffrey-kor.github.io/tags/data-structure/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Data structure and Python: STACK</title>
+      <link>https://jeffrey-kor.github.io/computer-science/data-structure/stack/</link>
+      <pubDate>Thu, 08 Apr 2021 18:48:24 +0900</pubDate>
+      
+      <guid>https://jeffrey-kor.github.io/computer-science/data-structure/stack/</guid>
+      <description>STACK  Stack is a linear data structure which follows a particular order in which the operations are performed. The order may be LIFO(Last In First Out) or FILO(First In Last Out).
+ Stack 자료구조는 선형 자료구조이며, LIFO, 즉 후입선출의 데이터 플로우를 가진 자료구조이다. 구현에 따라서 다양하게 디자인을 할 수 있지만 기본적인 동작 방식은 후입선출의 자료구조이다. 함수의 콜스택, 재귀 프로그램의 순서 제어 및 후위 표기법으로 표현된 산술식 연산 등에서도 사용된다고 한다.</description>
+    </item>
+    
+  </channel>
+</rss>

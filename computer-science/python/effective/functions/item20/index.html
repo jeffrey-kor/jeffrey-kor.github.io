@@ -11,19 +11,16 @@
 <meta property="og:description" content="ITEM:20. Prefer Rasing Exceptions to Returning None 이번 아이템은 함수의 예외에 대한 내용인데 초보 몽키님과 타 블로거분들의 블로그를 참고하면서 천천히 고민해보았다.
 What is the Exception and Why important? 예외란 무엇이고 왜 중요할까? 우리는 프로그램을 만들고 배포를 하게 되며, 사용자가 서비스를 받아줬으면 하는 생각으로 프로그램을 작성하게 된다. 하지만, 사용자가 꼭 제공하고자 하는 서비스의 룰을 지키는 것만은 아닐 것이다. 비밀번호를 입력하는 곳에 나의 시스템에서 허용하지 않는 포맷을 사용한다던지, 아니면 예기치 못한 연산을 실행하도록 한다던지, 연산이 되지 않는(항상 일정한) 값을 제공 한다던지 등등 지켜줘야 하는 포맷을 지키지 않고서도 필터 코드를 통과한다면 차후에 해당 데이터로 어떠한 기능을 하는 연산을 시행했을 때 시스템은 동작을 멈추게 될 것이다." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://jeffrey-kor.github.io/computer-science/python/effective/functions/item20/" />
-<meta property="article:published_time" content="2021-04-12T17:16:48+09:00" />
-<meta property="article:modified_time" content="2021-04-12T17:16:48+09:00" />
+<meta property="og:url" content="https://jeffrey-kor.github.io/computer-science/python/effective/functions/item20/" /><meta property="article:section" content="Computer Science" />
+<meta property="article:published_time" content="2021-04-12T17:16:48&#43;09:00" />
+<meta property="article:modified_time" content="2021-04-12T17:16:48&#43;09:00" />
+
 
 		<meta itemprop="name" content="Effective Python: Return None">
 <meta itemprop="description" content="ITEM:20. Prefer Rasing Exceptions to Returning None 이번 아이템은 함수의 예외에 대한 내용인데 초보 몽키님과 타 블로거분들의 블로그를 참고하면서 천천히 고민해보았다.
-What is the Exception and Why important? 예외란 무엇이고 왜 중요할까? 우리는 프로그램을 만들고 배포를 하게 되며, 사용자가 서비스를 받아줬으면 하는 생각으로 프로그램을 작성하게 된다. 하지만, 사용자가 꼭 제공하고자 하는 서비스의 룰을 지키는 것만은 아닐 것이다. 비밀번호를 입력하는 곳에 나의 시스템에서 허용하지 않는 포맷을 사용한다던지, 아니면 예기치 못한 연산을 실행하도록 한다던지, 연산이 되지 않는(항상 일정한) 값을 제공 한다던지 등등 지켜줘야 하는 포맷을 지키지 않고서도 필터 코드를 통과한다면 차후에 해당 데이터로 어떠한 기능을 하는 연산을 시행했을 때 시스템은 동작을 멈추게 될 것이다.">
-<meta itemprop="datePublished" content="2021-04-12T17:16:48&#43;09:00" />
+What is the Exception and Why important? 예외란 무엇이고 왜 중요할까? 우리는 프로그램을 만들고 배포를 하게 되며, 사용자가 서비스를 받아줬으면 하는 생각으로 프로그램을 작성하게 된다. 하지만, 사용자가 꼭 제공하고자 하는 서비스의 룰을 지키는 것만은 아닐 것이다. 비밀번호를 입력하는 곳에 나의 시스템에서 허용하지 않는 포맷을 사용한다던지, 아니면 예기치 못한 연산을 실행하도록 한다던지, 연산이 되지 않는(항상 일정한) 값을 제공 한다던지 등등 지켜줘야 하는 포맷을 지키지 않고서도 필터 코드를 통과한다면 차후에 해당 데이터로 어떠한 기능을 하는 연산을 시행했을 때 시스템은 동작을 멈추게 될 것이다."><meta itemprop="datePublished" content="2021-04-12T17:16:48&#43;09:00" />
 <meta itemprop="dateModified" content="2021-04-12T17:16:48&#43;09:00" />
 <meta itemprop="wordCount" content="865">
-
-
-
 <meta itemprop="keywords" content="Effective python,이펙티브 파이썬,아이템 19," />
 		<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Effective Python: Return None"/>
@@ -235,6 +232,12 @@ _, result <span style="color:#f92672">=</span> careful_divide(x, y)
 			<p class="pager__title">Effective Python: Python Unpacking </p>
 		</a>
 	</div>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="/computer-science/operating-system/os_1/" rel="next">
+			<span class="pager__subtitle">Next&thinsp;»</span>
+			<p class="pager__title">운영체제: Introduction</p>
+		</a>
+	</div>
 </nav>
 
 
@@ -251,7 +254,10 @@ _, result <span style="color:#f92672">=</span> careful_divide(x, y)
 <div class="widget-taglist widget">
 	<h4 class="widget__title">Tags</h4>
 	<div class="widget__content">
+		<a class="widget-taglist__link widget__link btn" href="/tags/data-structure/" title="data structure">data structure (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/effective-python/" title="Effective python">Effective python (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/operating-system/" title="Operating System">Operating System (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/stack/" title="Stack">Stack (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/til/" title="TIL">TIL (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/%EC%95%84%EC%9D%B4%ED%85%9C-19/" title="아이템 19">아이템 19 (2)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/%EC%9D%B4%ED%8E%99%ED%8B%B0%EB%B8%8C-%ED%8C%8C%EC%9D%B4%EC%8D%AC/" title="이펙티브 파이썬">이펙티브 파이썬 (2)</a>
