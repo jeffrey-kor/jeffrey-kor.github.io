@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Dp_1 - Jeffrey 10 fingers</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:title" content="Dp_1" />
+<meta property="og:description" content="Dynamic Programming 동적 프로그래밍이란 문제의 크기가 작은 소문제에 대한 해를 저장해 놓고, 이를 이용하여 크기가 보다 큰 문제의 해를 점진적으로 만들어가는 상향식 접근 방법이다.
+  각각의 소문제는 원래의 문제와 동일하지만 입력의 크기에 줄어듦
+  입력 크기가 아주 작은 단순한 문제가 되면 쉽게 해를 구할 수 있고, 이런 소문제의 해는 다시 사용될 수 있으므로 테이블에 저장
+  해당 소문제의 해가 필요할 때마다 테이블에서 결과를 바로 이용한다.
+  유형:" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://jeffrey-kor.github.io/computer-science/algorithms/dp_1/" /><meta property="article:section" content="Computer Science" />
+<meta property="article:published_time" content="2021-04-23T18:19:10&#43;09:00" />
+<meta property="article:modified_time" content="2021-04-23T18:19:10&#43;09:00" />
+
+
+		<meta itemprop="name" content="Dp_1">
+<meta itemprop="description" content="Dynamic Programming 동적 프로그래밍이란 문제의 크기가 작은 소문제에 대한 해를 저장해 놓고, 이를 이용하여 크기가 보다 큰 문제의 해를 점진적으로 만들어가는 상향식 접근 방법이다.
+  각각의 소문제는 원래의 문제와 동일하지만 입력의 크기에 줄어듦
+  입력 크기가 아주 작은 단순한 문제가 되면 쉽게 해를 구할 수 있고, 이런 소문제의 해는 다시 사용될 수 있으므로 테이블에 저장
+  해당 소문제의 해가 필요할 때마다 테이블에서 결과를 바로 이용한다.
+  유형:"><meta itemprop="datePublished" content="2021-04-23T18:19:10&#43;09:00" />
+<meta itemprop="dateModified" content="2021-04-23T18:19:10&#43;09:00" />
+<meta itemprop="wordCount" content="453">
+<meta itemprop="keywords" content="Test,Another test," />
+		<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Dp_1"/>
+<meta name="twitter:description" content="Dynamic Programming 동적 프로그래밍이란 문제의 크기가 작은 소문제에 대한 해를 저장해 놓고, 이를 이용하여 크기가 보다 큰 문제의 해를 점진적으로 만들어가는 상향식 접근 방법이다.
+  각각의 소문제는 원래의 문제와 동일하지만 입력의 크기에 줄어듦
+  입력 크기가 아주 작은 단순한 문제가 되면 쉽게 해를 구할 수 있고, 이런 소문제의 해는 다시 사용될 수 있으므로 테이블에 저장
+  해당 소문제의 해가 필요할 때마다 테이블에서 결과를 바로 이용한다.
+  유형:"/>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/custom.css">
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo logo--mixed">
+		<a class="logo__link" href="/" title="Jeffrey, Immerse, Learn and Archieve" rel="home">
+			<div class="logo__item logo__imagebox">
+					<img class="logo__img" src="/placeholder.png">
+				</div><div class="logo__item logo__text">
+					<div class="logo__title">Jeffrey, Immerse, Learn and Archieve</div>
+					<div class="logo__tagline">Taking one more step in the footsteps of the seniors</div>
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/about/">
+				<i class='fa fa-heart'></i>
+				<span class="menu__text">about</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/computer-science/">
+				
+				<span class="menu__text">Computer Sciences</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/traces/">
+				
+				<span class="menu__text">Traces</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Dp_1</h1>
+			<div class="post__meta meta"><div class="meta__item-author meta__item">
+	<svg class="meta__icon icon icon-author" width="16" height="16" viewBox="0 0 12 16"><path d="M6 1c2.2 0 3.5 2 3.5 4.5C9.5 7 8.9 8.2 8 9c2.9.8 4 2.5 4 5v1H0v-1c0-2.5 1.1-4.2 4-5-.9-.8-1.5-2-1.5-3.5C2.5 3 3.8 1 6 1z"/></svg><span class="meta__text">Jeffrey Yoon</span>
+</div>
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2021-04-23T18:19:10&#43;09:00">2021-04-23</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/category-1/" rel="category">Category 1</a>, <a class="meta__link" href="/categories/category-2/" rel="category">Category 2</a>
+	</span>
+</div></div>
+		</header>
+		<figure class="post__thumbnail">
+			<img src="/img/placeholder.jpg" alt="Dp_1">
+		</figure>
+<div class="post__toc toc">
+	<div class="toc__title">Page content</div>
+	<div class="toc__menu">
+		<nav id="TableOfContents">
+  <ul>
+    <li><a href="#dynamic-programming">Dynamic Programming</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+	</div>
+</div><div class="content post__content clearfix">
+			<h2 id="dynamic-programming">Dynamic Programming</h2>
+<p>동적 프로그래밍이란 문제의 크기가 작은 소문제에 대한 해를 저장해 놓고, 이를 이용하여 크기가 보다 큰 문제의 해를 점진적으로 만들어가는 상향식 접근 방법이다.</p>
+<ul>
+<li>
+<p>각각의 소문제는 원래의 문제와 동일하지만 입력의 크기에 줄어듦</p>
+</li>
+<li>
+<p>입력 크기가 아주 작은 단순한 문제가 되면 쉽게 해를 구할 수 있고, 이런 소문제의 해는 다시 사용될 수 있으므로 테이블에 저장</p>
+</li>
+<li>
+<p>해당 소문제의 해가 필요할 때마다 테이블에서 결과를 바로 이용한다.</p>
+</li>
+<li>
+<p>유형:</p>
+<ul>
+<li>최적화 문제: 최솟값, 최댓값 구하는 문제</li>
+</ul>
+</li>
+<li>
+<p>원리
+분할 정복 방법</p>
+<ul>
+<li>하향식 접근 방법</li>
+<li>상우 레벨의 큰 문제를 순환적으로 부분 배열로 분할하고 이들의 해를 결합해서 원래 문제를 해결하는 방법</li>
+<li>알고리즘: 이진 탐색, 합병 정렬, 퀵 정렬, 선택 문제
+동적 프로그래밍 방법
+<ul>
+<li>상향식 접근 방법</li>
+<li>입력 크기가 작은 소문제들을 모두 해결하여 구한 해를 테이블에 저장 후 이 해들을 이용해서 보다 큰 크기의 문제를 해결하는 방법</li>
+<li>소 문제들은 독립적이지 않고, 중복되는 부분이 존재</li>
+<li>피보나치 수열, 연쇄 행렬 곱셈, 스트링 편집거리, 모든 정점 간의 최단 경로(플로이드 알고리즘), 저울 문제</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>동적 프로그래밍 방법의 원리
+최적성의 원리(principle of optimality)를 반드시 만족해야 한다
+- 주어진 문제에 대한 최적해는 주어진 문제의 소문제에 대한 최적해로 구성된다. &laquo; 이게 만족해야만 DP 를 쓸수있음
+동적 프로그래밍 방법의 적용 과정
+- 문제의 특성을 분석해서 최적성으 원리가 성립되는지 확인
+- 주어진 문제에 대해서 최적해를 제공하는 점화식을 도출
+- 가장 작은 소문제부터 점화식의 해를 구해서 테이블에 저장
+- 테이블에 저장된 소문제의 해를 이용하여 점차적으로 큰 상위 문제의 해를 구한다.</p>
+<h4 id="피보나치-수열-문제">피보나치 수열 문제</h4>
+<p>f(n)  = f(n-1) + f(n-2) n&gt;=2 f(0) = 0, f(1) = 1</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#f92672">(</span>n<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+    f<span style="color:#f92672">[</span>0<span style="color:#f92672">]</span> <span style="color:#f92672">=</span> 0<span style="color:#f92672">;</span> f<span style="color:#f92672">[</span>1<span style="color:#f92672">]</span> <span style="color:#f92672">=</span> 1<span style="color:#f92672">;</span>
+    <span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span>i<span style="color:#f92672">=</span>2<span style="color:#f92672">;</span> i <span style="color:#f92672">&lt;=</span> n<span style="color:#f92672">;</span> i<span style="color:#f92672">++)</span>
+        f<span style="color:#f92672">[</span>i<span style="color:#f92672">]</span> <span style="color:#f92672">=</span> f<span style="color:#f92672">[</span>i<span style="color:#f92672">-</span>1<span style="color:#f92672">]</span> <span style="color:#f92672">+</span> f<span style="color:#f92672">[</span>i<span style="color:#f92672">-</span>2<span style="color:#f92672">]</span>
+    <span style="color:#66d9ef">return</span> f<span style="color:#f92672">[</span>n<span style="color:#f92672">]</span>
+<span style="color:#f92672">}</span>
+
+</code></pre></div><p>분할정복 방법을 적용한다면?</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">f</span><span style="color:#f92672">(</span>n<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+  <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>n<span style="color:#f92672">&lt;=</span>0<span style="color:#f92672">)</span> <span style="color:#66d9ef">return</span> 0<span style="color:#f92672">;</span>
+  <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>n<span style="color:#f92672">==</span>1<span style="color:#f92672">)</span> <span style="color:#66d9ef">return</span> 1<span style="color:#f92672">;</span>
+  <span style="color:#66d9ef">else</span> <span style="color:#f92672">{</span> <span style="color:#66d9ef">return</span> f<span style="color:#f92672">(</span>n<span style="color:#f92672">-</span>1<span style="color:#f92672">)</span> <span style="color:#f92672">+</span> f<span style="color:#f92672">(</span>n<span style="color:#f92672">-</span>2<span style="color:#f92672">)</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><p>분할정복 방법으로 풀게되면 소문제가 독립이 아니므로 중복된 계산이 필요 &gt; 매우 비효율적</p>
+<h4 id="연쇄-행렬-곱셈-문제">연쇄 행렬 곱셈 문제</h4>
+<p>n개의 행렬(M1, M2 &hellip; Mn)을 연쇄적으로 곱하는 경우</p>
+<ul>
+<li>결합 법칙 성립 -&gt; 여러가지 다른 곱셈 순서가 존재하게 됌 -&gt; 연산에 필요한 곱셈의 횟수가 달라짐(문제) -&gt; 연쇄 행렬 곱셈문제
+n개의 행렬을 연쇄적으로 곱할 때 <strong>최적의 곱셈 순서</strong>를 구하는 문제</li>
+<li>최적의 곱셈 순서 -&gt; 최소의 기본 곱셈 횟수를 갖는 행렬의 곱셈 순서</li>
+<li>행렬이란? 공부하자 이거</li>
+</ul>
+<p>동적 프로그래밍 적용</p>
+<ol>
+<li>
+<p>최적성의 원리가 만족되는지 봐야한다 -&gt; 주어진 문제의 최적해가 주어진 문제의 소 문제에 대한 최적해로서 구성이된다.</p>
+</li>
+<li>
+<p>n개의 행렬을 곱하는 최적의 순서는 n개의 행렬의 어떤 부분집합을 곱하는 최적의 순서를 포함</p>
+</li>
+<li>
+<p>7개의 행렬을 곱하는 최적의 순서 (M1, M2)((((M3, M4)M5)M6)M7)
+-&gt; M3, M4, M5를 곱하는 최적의 순서는 ((M3,M4)M5)
+-&gt; 모든 부분 문제들의 최적해로 n개 행렬을 곱하는 최적의 순서를 구할 수 있다.
+-&gt; 최적성의 원리를 만족
+-&gt; 동적 프로그래밍 방법으로 해결이 가능</p>
+</li>
+<li>
+<p>점화식 만들어내기 -&gt; 소문제에 대한 해를 구하기 위해
+Q) n개의 행렬 Mi(di-1 * di 차원) (1&lt;=i&lt;=n)
+도대체 무슨개소린지 모르겠다
+j=i=0, 1, (n-1)까지 C(i,j)를 차례대로 계산
+벋붜두버줃ㅂㅈ두버두ㅏㅂㅈ</p>
+</li>
+</ol>
+<p>C(i, i+2) = min(M(Mi+1 + M))</p>
+<p>막대기 자르기
+53. Maximum Subarray</p>
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/test/" rel="tag">Test</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/another-test/" rel="tag">Another test</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="Jeffrey Yoon avatar" src="/avatar.jpg" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">About Jeffrey Yoon</span>
+	</div>
+	<div class="authorbox__description">
+		Software Developer that&rsquo;s trying to contribute to society 🙈 Traveler with co-worker 🎌 Share, Reading, Talking🙆‍♂️
+	</div>
+</div>
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/computer-science/operating-system/process1/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">운영체제: 프로세스</p>
+		</a>
+	</div>
+</nav>
+
+
+			</div>
+			<aside class="sidebar"><div class="widget-search widget">
+	<form class="widget-search__form" role="search" method="get" action="https://google.com/search">
+		<label>
+			<input class="widget-search__field" type="search" placeholder="SEARCH…" value="" name="q" aria-label="SEARCH…">
+		</label>
+		<input class="widget-search__submit" type="submit" value="Search">
+		<input type="hidden" name="sitesearch" value="https://jeffrey-kor.github.io/" />
+	</form>
+</div>
+<div class="widget-taglist widget">
+	<h4 class="widget__title">Tags</h4>
+	<div class="widget__content">
+		<a class="widget-taglist__link widget__link btn" href="/tags/another-test/" title="Another test">Another test (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/data-structure/" title="data structure">data structure (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/effective-python/" title="Effective python">Effective python (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/operating-system/" title="Operating System">Operating System (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/stack/" title="Stack">Stack (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/test/" title="Test">Test (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/til/" title="TIL">TIL (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%EC%95%84%EC%9D%B4%ED%85%9C-19/" title="아이템 19">아이템 19 (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%EC%9D%B4%ED%8E%99%ED%8B%B0%EB%B8%8C-%ED%8C%8C%EC%9D%B4%EC%8D%AC/" title="이펙티브 파이썬">이펙티브 파이썬 (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%ED%9A%8C%EA%B3%A0/" title="회고">회고 (1)</a>
+	</div>
+</div>
+</aside>
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2021 Jeffrey.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+<script src="/js/custom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
+</body>
+</html>

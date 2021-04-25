@@ -6,7 +6,17 @@
     <description>Recent content in Operating System on Jeffrey 10 fingers</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 18 Apr 2021 19:37:54 +0900</lastBuildDate><atom:link href="https://jeffrey-kor.github.io/categories/operating-system/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 20 Apr 2021 15:14:03 +0900</lastBuildDate><atom:link href="https://jeffrey-kor.github.io/categories/operating-system/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>운영체제: 프로세스</title>
+      <link>https://jeffrey-kor.github.io/computer-science/operating-system/process1/</link>
+      <pubDate>Tue, 20 Apr 2021 15:14:03 +0900</pubDate>
+      
+      <guid>https://jeffrey-kor.github.io/computer-science/operating-system/process1/</guid>
+      <description>프로세스 (Process)  In computing, a process is the instance of a computer program that is being executed by one or many threads. It contains the program code and its activity. Depending on the operating system (OS), a process may be made up of multiple threads of execution that execute instructions concurrently.
+ 프로세스(process)는 컴퓨터에서 연속적으로 실행되고 있는 컴퓨터 프로그램을 말한다. 종종 스케줄링의 대상이 되는 작업(task)이라는 용어와 거의 같은 의미로 쓰인다.</description>
+    </item>
+    
     <item>
       <title>운영체제: Introduction</title>
       <link>https://jeffrey-kor.github.io/computer-science/operating-system/os_1/</link>

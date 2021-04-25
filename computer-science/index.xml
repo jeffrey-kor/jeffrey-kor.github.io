@@ -6,7 +6,30 @@
     <description>Recent content in Computer Sciences on Jeffrey 10 fingers</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 18 Apr 2021 19:37:54 +0900</lastBuildDate><atom:link href="https://jeffrey-kor.github.io/computer-science/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 23 Apr 2021 18:19:10 +0900</lastBuildDate><atom:link href="https://jeffrey-kor.github.io/computer-science/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dp_1</title>
+      <link>https://jeffrey-kor.github.io/computer-science/algorithms/dp_1/</link>
+      <pubDate>Fri, 23 Apr 2021 18:19:10 +0900</pubDate>
+      
+      <guid>https://jeffrey-kor.github.io/computer-science/algorithms/dp_1/</guid>
+      <description>Dynamic Programming 동적 프로그래밍이란 문제의 크기가 작은 소문제에 대한 해를 저장해 놓고, 이를 이용하여 크기가 보다 큰 문제의 해를 점진적으로 만들어가는 상향식 접근 방법이다.
+  각각의 소문제는 원래의 문제와 동일하지만 입력의 크기에 줄어듦
+  입력 크기가 아주 작은 단순한 문제가 되면 쉽게 해를 구할 수 있고, 이런 소문제의 해는 다시 사용될 수 있으므로 테이블에 저장
+  해당 소문제의 해가 필요할 때마다 테이블에서 결과를 바로 이용한다.
+  유형:</description>
+    </item>
+    
+    <item>
+      <title>운영체제: 프로세스</title>
+      <link>https://jeffrey-kor.github.io/computer-science/operating-system/process1/</link>
+      <pubDate>Tue, 20 Apr 2021 15:14:03 +0900</pubDate>
+      
+      <guid>https://jeffrey-kor.github.io/computer-science/operating-system/process1/</guid>
+      <description>프로세스 (Process)  In computing, a process is the instance of a computer program that is being executed by one or many threads. It contains the program code and its activity. Depending on the operating system (OS), a process may be made up of multiple threads of execution that execute instructions concurrently.
+ 프로세스(process)는 컴퓨터에서 연속적으로 실행되고 있는 컴퓨터 프로그램을 말한다. 종종 스케줄링의 대상이 되는 작업(task)이라는 용어와 거의 같은 의미로 쓰인다.</description>
+    </item>
+    
     <item>
       <title>운영체제: Introduction</title>
       <link>https://jeffrey-kor.github.io/computer-science/operating-system/os_1/</link>
