@@ -41,27 +41,6 @@
     <loc>https://jeffrey-kor.github.io/computer-science/operating-system/os_1/</loc>
     <lastmod>2021-04-18T19:37:54+09:00</lastmod>
   </url><url>
-    <loc>https://jeffrey-kor.github.io/categories/effective-python/</loc>
-    <lastmod>2021-04-12T17:16:48+09:00</lastmod>
-  </url><url>
-    <loc>https://jeffrey-kor.github.io/tags/effective-python/</loc>
-    <lastmod>2021-04-12T17:16:48+09:00</lastmod>
-  </url><url>
-    <loc>https://jeffrey-kor.github.io/computer-science/python/effective/functions/item20/</loc>
-    <lastmod>2021-04-12T17:16:48+09:00</lastmod>
-  </url><url>
-    <loc>https://jeffrey-kor.github.io/categories/python/</loc>
-    <lastmod>2021-04-12T17:16:48+09:00</lastmod>
-  </url><url>
-    <loc>https://jeffrey-kor.github.io/tags/%EC%95%84%EC%9D%B4%ED%85%9C-19/</loc>
-    <lastmod>2021-04-12T17:16:48+09:00</lastmod>
-  </url><url>
-    <loc>https://jeffrey-kor.github.io/tags/%EC%9D%B4%ED%8E%99%ED%8B%B0%EB%B8%8C-%ED%8C%8C%EC%9D%B4%EC%8D%AC/</loc>
-    <lastmod>2021-04-12T17:16:48+09:00</lastmod>
-  </url><url>
-    <loc>https://jeffrey-kor.github.io/computer-science/python/effective/functions/item19/</loc>
-    <lastmod>2021-04-12T15:51:12+09:00</lastmod>
-  </url><url>
     <loc>https://jeffrey-kor.github.io/traces/trace01/</loc>
     <lastmod>2021-04-08T18:57:04+09:00</lastmod>
   </url><url>
@@ -88,5 +67,9 @@
   </url><url>
     <loc>https://jeffrey-kor.github.io/tags/stack/</loc>
     <lastmod>2021-04-08T18:48:24+09:00</lastmod>
+  </url><url>
+    <loc>https://jeffrey-kor.github.io/dev/oop/solid/</loc>
+  </url><url>
+    <loc>https://jeffrey-kor.github.io/dev/</loc>
   </url>
 </urlset>

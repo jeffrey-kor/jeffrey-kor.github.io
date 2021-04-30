@@ -26,7 +26,7 @@
   해당 소문제의 해가 필요할 때마다 테이블에서 결과를 바로 이용한다.
   유형:"><meta itemprop="datePublished" content="2021-04-23T18:19:10&#43;09:00" />
 <meta itemprop="dateModified" content="2021-04-23T18:19:10&#43;09:00" />
-<meta itemprop="wordCount" content="453">
+<meta itemprop="wordCount" content="609">
 <meta itemprop="keywords" content="Test,Another test," />
 		<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Dp_1"/>
@@ -79,6 +79,13 @@
 			<a class="menu__link" href="/computer-science/">
 				
 				<span class="menu__text">Computer Sciences</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/dev/">
+				
+				<span class="menu__text">DEVs</span>
 				
 			</a>
 		</li>
@@ -220,6 +227,29 @@ j=i=0, 1, (n-1)까지 C(i,j)를 차례대로 계산
 <p>C(i, i+2) = min(M(Mi+1 + M))</p>
 <p>막대기 자르기
 53. Maximum Subarray</p>
+<h5 id="분할-정복-2탄">분할 정복 2탄</h5>
+<p>스트링 편집 거리 문제
+모든 정점간의 최단 경로(플로이드 알고리즘)
+저울 문제</p>
+<h5 id="스트링-문자열-x와-y-사이의-편집-거리">스트링 문자열 X와 Y 사이의 편집 거리</h5>
+<p>문자열 X를 Y로 변환하는 데 필요한 전체 편집 연산에 대한 최소 비용</p>
+<ul>
+<li>특정 위치에 새 문자를 삽입하는 연산</li>
+<li>특정 위치의 문자를 삭제하는 연산</li>
+<li>특정 위치의 문자를 다른 문자로 변경하는 연산</li>
+</ul>
+<p>이 문제를 DP로 푸려면, 최적성의 원리를 만족해야 함.
+X와 Y 사이의 편집거리는 이들의 부분 문자열 사이의 편집 거리를 포함함.</p>
+<h5 id="모든-정점간의-최단-경로플로이드-알고리즘">모든 정점간의 최단 경로(플로이드 알고리즘)</h5>
+<p>가중 방향 그래프에서 두 정점을 연결하는 경로 중에서 간선의가중치의 합이 가장 작은 경로</p>
+<ul>
+<li>단일 출발점 최단 경로 -&gt; 하나의 특정 정점에서 다른 모든 정점으로의 최단 경로 -&gt; 다익스트라 알고리즘(그리디)</li>
+<li>모든 정점간의 최단 경로 -&gt; 모든 조합의 두 정점 간의 최단 경로
+모든 정점 간의 최단 경로 -&gt; 모든 조합의 두 정점 간의 최단 경로 -&gt; 플로이드</li>
+</ul>
+<h5 id="저울-문제">저울 문제</h5>
+<p>양팔 저울, n개의 추, 각 추의 무게 w(i) (1 &lt;= i &lt;= n)
+무게 M인 물체를 양팔 저울로 달 수 있는지 확인하는 문제</p>
 
 		</div>
 		<footer class="post__footer">
@@ -276,13 +306,10 @@ j=i=0, 1, (n-1)까지 C(i,j)를 차례대로 계산
 	<div class="widget__content">
 		<a class="widget-taglist__link widget__link btn" href="/tags/another-test/" title="Another test">Another test (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/data-structure/" title="data structure">data structure (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/effective-python/" title="Effective python">Effective python (2)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/operating-system/" title="Operating System">Operating System (2)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/stack/" title="Stack">Stack (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/test/" title="Test">Test (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/til/" title="TIL">TIL (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/%EC%95%84%EC%9D%B4%ED%85%9C-19/" title="아이템 19">아이템 19 (2)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/%EC%9D%B4%ED%8E%99%ED%8B%B0%EB%B8%8C-%ED%8C%8C%EC%9D%B4%EC%8D%AC/" title="이펙티브 파이썬">이펙티브 파이썬 (2)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/%ED%9A%8C%EA%B3%A0/" title="회고">회고 (1)</a>
 	</div>
 </div>
