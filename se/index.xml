@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Nest.js on Jeffrey 10 fingers</title>
-    <link>https://jeffrey-kor.github.io/tags/nest.js/</link>
-    <description>Recent content in Nest.js on Jeffrey 10 fingers</description>
+    <title>Ses on Jeffrey 10 fingers</title>
+    <link>https://jeffrey-kor.github.io/se/</link>
+    <description>Recent content in Ses on Jeffrey 10 fingers</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 29 Apr 2021 22:39:00 +0900</lastBuildDate><atom:link href="https://jeffrey-kor.github.io/tags/nest.js/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 29 Apr 2021 22:39:00 +0900</lastBuildDate><atom:link href="https://jeffrey-kor.github.io/se/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Nest Overview</title>
       <link>https://jeffrey-kor.github.io/se/nestjs/nest01/</link>

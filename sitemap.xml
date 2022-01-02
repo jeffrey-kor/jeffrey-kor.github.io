@@ -5,13 +5,10 @@
     <loc>https://jeffrey-kor.github.io/categories/</loc>
     <lastmod>2021-04-29T22:39:00+09:00</lastmod>
   </url><url>
-    <loc>https://jeffrey-kor.github.io/dev/</loc>
-    <lastmod>2021-04-29T22:39:00+09:00</lastmod>
-  </url><url>
     <loc>https://jeffrey-kor.github.io/</loc>
     <lastmod>2021-04-29T22:39:00+09:00</lastmod>
   </url><url>
-    <loc>https://jeffrey-kor.github.io/dev/nestjs/nest01/</loc>
+    <loc>https://jeffrey-kor.github.io/se/nestjs/nest01/</loc>
     <lastmod>2021-04-29T22:39:00+09:00</lastmod>
   </url><url>
     <loc>https://jeffrey-kor.github.io/tags/nest.js/</loc>
@@ -20,25 +17,22 @@
     <loc>https://jeffrey-kor.github.io/categories/nest.js/</loc>
     <lastmod>2021-04-29T22:39:00+09:00</lastmod>
   </url><url>
-    <loc>https://jeffrey-kor.github.io/tags/</loc>
+    <loc>https://jeffrey-kor.github.io/se/</loc>
     <lastmod>2021-04-29T22:39:00+09:00</lastmod>
   </url><url>
-    <loc>https://jeffrey-kor.github.io/tags/another-test/</loc>
-    <lastmod>2021-04-23T18:19:10+09:00</lastmod>
-  </url><url>
-    <loc>https://jeffrey-kor.github.io/categories/category-1/</loc>
-    <lastmod>2021-04-23T18:19:10+09:00</lastmod>
-  </url><url>
-    <loc>https://jeffrey-kor.github.io/categories/category-2/</loc>
-    <lastmod>2021-04-23T18:19:10+09:00</lastmod>
+    <loc>https://jeffrey-kor.github.io/tags/</loc>
+    <lastmod>2021-04-29T22:39:00+09:00</lastmod>
   </url><url>
     <loc>https://jeffrey-kor.github.io/computer-science/</loc>
     <lastmod>2021-04-23T18:19:10+09:00</lastmod>
   </url><url>
-    <loc>https://jeffrey-kor.github.io/computer-science/algorithms/dp_1/</loc>
+    <loc>https://jeffrey-kor.github.io/tags/dynamic-programming/</loc>
     <lastmod>2021-04-23T18:19:10+09:00</lastmod>
   </url><url>
-    <loc>https://jeffrey-kor.github.io/tags/test/</loc>
+    <loc>https://jeffrey-kor.github.io/categories/dynamic-programming/</loc>
+    <lastmod>2021-04-23T18:19:10+09:00</lastmod>
+  </url><url>
+    <loc>https://jeffrey-kor.github.io/computer-science/algorithms/dp_1/</loc>
     <lastmod>2021-04-23T18:19:10+09:00</lastmod>
   </url><url>
     <loc>https://jeffrey-kor.github.io/tags/operating-system/</loc>
@@ -79,7 +73,5 @@
   </url><url>
     <loc>https://jeffrey-kor.github.io/tags/stack/</loc>
     <lastmod>2021-04-08T18:48:24+09:00</lastmod>
-  </url><url>
-    <loc>https://jeffrey-kor.github.io/dev/oop/solid/</loc>
   </url>
 </urlset>
